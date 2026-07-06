@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int side, area;
+
+        Console.Write("Enter Side: ");
+        side = Convert.ToInt32(Console.ReadLine());
+
+        area = side * side;
+
+        Console.WriteLine("Area = " + area);
+    }
+}
