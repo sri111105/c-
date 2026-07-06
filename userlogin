@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string username, password;
+
+        string correctUser = "admin";
+        string correctPass = "1234";
+
+        int attempt = 1;
+
+        while (attempt <= 3)
+        {
+            Console.Write("Enter Username: ");
+            username = Console.ReadLine();
+
+            Console.Write("Enter Password: ");
+            password = Console.ReadLine();
+
+            if (username == correctUser && password == correctPass)
+            {
+                Console.WriteLine("Login Successful");
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Wrong Username or Password");
+            }
+
+            attempt++;
+        }
+
+        if (attempt > 3)
+        {
+            Console.WriteLine("User Rejected");
+        }
+    }
+}
